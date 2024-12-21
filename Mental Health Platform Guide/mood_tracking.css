@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+/* Mood Entry Section */
+.mood_entry {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood_entry label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.mood_entry select,
+.mood_entry textarea,
+.mood_entry button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.mood_entry textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.mood_entry button {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mood_entry button:hover {
+  background-color: #388e3c;
+}
+
+/* Mood Log Section */
+.mood_log {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood_log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mood_log li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mood_log li strong {
+  color: #4caf50;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Mood Analysis Section */
+.mood_analysis {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#mood_chart {
+  width: 100%;       /* Adjust width */
+  max-height: 250px; /* Adjust height */
+  height: auto;      /* Maintain aspect ratio */
+}

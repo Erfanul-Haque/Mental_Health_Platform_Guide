@@ -3,75 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Health Support Community</title>
+  <title>Mental Health Support Community Platform</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Mental Health Support Community</h1>
-    <nav>
-      <ul>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#mood-tracking">Mood Tracking</a></li>
-        <li><a href="#recommendations">Recommendations</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="logo">Mental Health Platform</div>
+      <div class="menu">
+        <a href="anonymous-login.html">Anonymous Login</a>
+      </div>
     </nav>
   </header>
-
   <main>
-    <section id="profile">
-      <h2>Anonymous Profile</h2>
-      <form id="profile-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Enter your nickname">
-        <br>
-        <label for="preferences">Preferences:</label>
-        <textarea id="preferences" placeholder="Write your preferences here"></textarea>
-        <br>
-        <button type="button" onclick="saveProfile()">Save Profile</button>
-      </form>
-    </section>
-
-    <section id="goals">
-      <h2>Goal Setting</h2>
-      <form id="goal-form">
-        <label for="goal">Your Goal:</label>
-        <input type="text" id="goal" placeholder="E.g., Meditate daily">
-        <br>
-        <button type="button" onclick="addGoal()">Add Goal</button>
-      </form>
-      <ul id="goal-list"></ul>
-    </section>
-
-    <section id="mood-tracking">
-      <h2>Mood Tracking</h2>
-      <form id="mood-form">
-        <label for="mood">Mood:</label>
-        <input type="text" id="mood" placeholder="E.g., Happy, Sad">
-        <br>
-        <label for="mood-note">Notes:</label>
-        <textarea id="mood-note" placeholder="Why do you feel this way?"></textarea>
-        <br>
-        <button type="button" onclick="trackMood()">Track Mood</button>
-      </form>
-      <ul id="mood-list"></ul>
-    </section>
-
-    <section id="recommendations">
-      <h2>Personalized Recommendations</h2>
-      <div id="recommendation-box">
-        <p>Get recommendations based on your mood and preferences.</p>
-        <button type="button" onclick="generateRecommendations()">Get Recommendations</button>
-        <ul id="recommendations-list"></ul>
-      </div>
+    <section class="hero">
+      <h1>Welcome to the Mental Health Support Community</h1>
+      <p>Your safe space to explore mental health resources and connect anonymously.</p>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2024 Mental Health Support Community</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
