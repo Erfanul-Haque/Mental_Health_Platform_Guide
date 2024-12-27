@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Threads</title>
+  <link rel="stylesheet" href="discussion.css">
+</head>
+<body>
+  <header>
+    <h1>Discussion Threads</h1>
+  </header>
+  <main>
+    <!-- Discussion Thread List -->
+    <section class="discussion-list">
+      <h2>Topics</h2>
+      <ul id="discussion-topics">
+        <li>
+          <strong>Topic:</strong> Managing Stress at Work
+          <button class="view-thread" data-id="1">View Discussion</button>
+        </li>
+        <li>
+          <strong>Topic:</strong> Tips for Better Sleep
+          <button class="view-thread" data-id="2">View Discussion</button>
+        </li>
+        <li>
+          <strong>Topic:</strong> How to Overcome Anxiety
+          <button class="view-thread" data-id="3">View Discussion</button>
+        </li>
+        <li>
+          <strong>Topic:</strong> Healthy Eating Habits for Mental Health
+          <button class="view-thread" data-id="4">View Discussion</button>
+        </li>
+        <li>
+          <strong>Topic:</strong> Dealing with Burnout
+          <button class="view-thread" data-id="5">View Discussion</button>
+        </li>
+        <li>
+          <strong>Topic:</strong> Daily Journaling for Emotional Resilience
+          <button class="view-thread" data-id="6">View Discussion</button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Active Discussion Thread -->
+    <section class="active-thread hidden" id="active-thread">
+      <h2 id="thread-title"></h2>
+      <div id="thread-content">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <form id="message-form">
+        <textarea id="new-message" placeholder="Write a message..." required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+  </main>
+  <script src="discussion.js"></script>
+</body>
+</html>
