@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer-to-Peer Support</title>
+  <link rel="stylesheet" href="peer-support.css">
+</head>
+<body>
+  <header>
+    <h1>Peer-to-Peer Support</h1>
+  </header>
+  <main>
+    <!-- Available Users Section -->
+    <section class="user-list">
+      <h2>Available Users</h2>
+      <ul id="available-users">
+        <li>
+          <span>User: John Doe</span>
+          <button class="connect-btn" data-username="John Doe">Connect</button>
+        </li>
+        <li>
+          <span>User: Jane Smith</span>
+          <button class="connect-btn" data-username="Jane Smith">Connect</button>
+        </li>
+        <li>
+          <span>User: Sam Wilson</span>
+          <button class="connect-btn" data-username="Sam Wilson">Connect</button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Chat Window Section -->
+    <section class="chat-window hidden" id="chat-window">
+      <h2 id="chat-title"></h2>
+      <div id="chat-messages">
+        <!-- Chat messages will be dynamically added here -->
+      </div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type a message..." required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <script src="peer-support.js"></script>
+</body>
+</html>
