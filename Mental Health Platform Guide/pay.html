@@ -1,0 +1,35 @@
+<!-- HTML File: payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Integration</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Select Payment Method</h2>
+        <div class="payment-method">
+            <button class="bkash" onclick="makePayment('bKash', '017XXXXXXXX')">bKash</button>
+            <button class="nagad" onclick="makePayment('Nagad', '018XXXXXXXX')">Nagad</button>
+            <button class="rocket" onclick="makePayment('Rocket', '019XXXXXXXX')">Rocket</button>
+        </div>
+        <div class="payment-result" id="paymentResult"></div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3 id="paymentMethod"></h3>
+            <p>Make your payment to the number below:</p>
+            <p id="paymentNumber" class="highlight"></p>
+            <label for="transactionId">Enter Transaction ID:</label>
+            <input type="text" id="transactionId" placeholder="Transaction ID">
+            <button onclick="verifyPayment()">Verify Payment</button>
+        </div>
+    </div>
+
+    <script src="pay.js"></script>
+</body>
+</html>
