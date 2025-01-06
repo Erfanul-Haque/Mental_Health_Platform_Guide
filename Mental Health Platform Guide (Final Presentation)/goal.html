@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Goal Setting</title>
+  <link rel="stylesheet" href="css/goal.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mental Health Goal Setting</h1>
+
+    <div class="goal-input">
+      <h2>Add Custom Goal</h2>
+      <input type="text" id="customGoalInput" placeholder="Enter your goal">
+      <button onclick="addGoalFromInput()">Add Goal</button>
+    </div>
+
+    <div class="preset-goals">
+      <h2>Select Preset Goal</h2>
+      <ul id="presetGoalsList"></ul>
+    </div>
+
+    <div class="goal-list">
+      <h2>Your Goals</h2>
+      <ul id="goalList"></ul>
+    </div>
+  </div>
+  <script src="js/goal.js"></script>
+</body>
+
+</html>

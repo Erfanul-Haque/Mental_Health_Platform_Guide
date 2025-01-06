@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracking</title>
+  <link rel="stylesheet" href="css/mood_tracking.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+  <header>
+    <h1>Mood Tracker</h1>
+  </header>
+  <main>
+    <!-- Mood Entry Form -->
+    <section class="mood_entry">
+      <h2>Record Your Mood</h2>
+      <form id="mood_form">
+        <label for="mood">Mood:</label>
+        <select id="mood" required>
+          <option value="">-- Select Mood --</option>
+          <option value="Happy">Happy</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Sad">Sad</option>
+        </select>
+
+        <label for="notes">Notes (Optional):</label>
+        <textarea id="notes" placeholder="Add details about your day"></textarea>
+
+        <button type="submit">Save Mood</button>
+      </form>
+    </section>
+
+    <!-- Mood Log -->
+    <section class="mood_log">
+      <h2>Mood Log</h2>
+      <ul id="mood_log">
+        <!-- Entries will be dynamically added here -->
+      </ul>
+    </section>
+
+    <!-- Mood Analysis -->
+    <section class="mood_analysis">
+      <h2>Mood Analysis</h2>
+      <canvas id="mood_chart"></canvas>
+    </section>
+  </main>
+  <script src="js/mood_tracking.js"></script> <!-- Your custom JavaScript -->
+</body>
+</html>

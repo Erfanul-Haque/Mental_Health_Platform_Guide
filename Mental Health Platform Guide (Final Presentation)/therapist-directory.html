@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapist Directory</title>
+  <link rel="stylesheet" href="css/therapist-directory.css">
+</head>
+<body>
+  <header>
+    <h1>Find a Licensed Therapist</h1>
+    <nav>
+        <input type="text" id="search-input" placeholder="Search by name or specialty..." />
+        <select id="filter-location">
+          <option value="all">All Locations</option>
+          <option value="Dhaka">Dhaka</option>
+          <option value="Sylhet">Sylhet</option>
+          <option value="Khulna">Khulna</option>
+          <option value="Chittagong">Chittagong</option>
+          <option value="Barisal">Barisal</option>
+          <option value="Rajshahi">Rajshahi</option>
+          <option value="Cox's Bazar">Cox's Bazar</option>
+        </select>
+        <button id="search-button">Search</button>
+      </nav>      
+  </header>
+  <main>
+    <section class="therapist-list" id="therapist-list">
+      <!-- Therapist cards will be dynamically added here -->
+    </section>
+  </main>
+  <script src="js/therapist-directory.js"></script>
+</body>
+</html>

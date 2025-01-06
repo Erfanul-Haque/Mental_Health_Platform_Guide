@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Moderation</title>
+  <link rel="stylesheet" href="css/moderation.css">
+</head>
+<body>
+  <header>
+    <h1>Content Moderation</h1>
+  </header>
+  <main>
+    <!-- Report Content Section -->
+    <section class="report-content">
+      <h2>Report Inappropriate Content</h2>
+      <textarea id="report-input" placeholder="Describe the issue or paste the inappropriate content here..." required></textarea>
+      <button id="submit-report">Submit Report</button>
+    </section>
+
+    <!-- Moderation Review Section -->
+    <section class="moderation-review">
+      <h2>Moderation Dashboard</h2>
+      <p>Below are the reported contents awaiting review:</p>
+      <ul id="reports-list">
+        <!-- Reports will be dynamically added here -->
+      </ul>
+    </section>
+  </main>
+  <script src="js/moderation.js"></script>
+</body>
+</html>
