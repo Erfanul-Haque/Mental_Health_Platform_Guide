@@ -1,13 +1,16 @@
-/* CSS File: styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #f4f4f4;
+    background-image: url('background11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333; /* Ensure the text is visible on the background */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;    /* Center horizontally */
+    min-height: 100vh;      /* Ensure full screen height */
+    margin: 0;              /* Remove default body margin */
 }
 
 .payment-container {
