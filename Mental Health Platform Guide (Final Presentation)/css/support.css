@@ -1,0 +1,75 @@
+/* General Styles */
+
+  
+body {
+    background-image: url('support-image.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333; /* Ensure the text is visible on the background */
+  }
+  
+
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4caf50;
+    color: white;
+  }\\
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Support Groups Section */
+  .support-groups ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .support-groups li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    margin: 0 0 10px;
+    color: #4caf50;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  button.joined {
+    background-color: #f44336;
+  }
+  
+  button.joined:hover {
+    background-color: #d32f2f;
+  }
+  

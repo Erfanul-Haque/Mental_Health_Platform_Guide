@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+  background-image: url('background9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #333; /* Ensure the text is visible on the background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensure full screen height */
+}
+
+/* Header */
+header {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 20px;
+}
+
+.tips {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 400px;
+}
+
+.tips h2 {
+  color: #0077b6;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#dailyTip {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .tips {
+    padding: 20px;
+  }
+
+  #dailyTip {
+    font-size: 1rem;
+  }
+}
